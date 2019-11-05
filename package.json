@@ -1,0 +1,19 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "a Tetris clone built using Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyle974/Tetris.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyle974/Tetris/issues"
+  },
+  "homepage": "https://github.com/Kyle974/Tetris#readme"
+}
