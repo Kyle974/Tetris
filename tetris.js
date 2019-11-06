@@ -94,6 +94,9 @@ function playerReset() {
   player.pos.y = 0;
   player.pos.x =
     ((arena[0].length / 2) | 0) - ((player.matrix[0].length / 2) | 0);
+  if (collide(arena, player)) {
+    arena.forEach((row) => row.fill(0));
+  }
 }
 
 function playerRotate(dir) {
@@ -147,7 +150,7 @@ console.log(arena);
 console.table(arena);
 
 const player = {
-  pos: { x: 5, y: 5 },
+  pos: { x: 5, y: 0 },
   matrix: createPiece("Z")
 };
 
