@@ -3,6 +3,17 @@ const context = canvas.getContext("2d");
 
 context.scale(20, 20);
 
+const colours = [
+  null,
+  "red",
+  "blue",
+  "violet",
+  "green",
+  "purple",
+  "orange",
+  "pink"
+];
+
 function collide(arena, player) {
   const m = player.matrix;
   const o = player.pos;
@@ -144,17 +155,6 @@ function update(time = 0) {
   draw();
   requestAnimationFrame(update);
 }
-
-const colours = [
-  null,
-  "red",
-  "blue",
-  "violet",
-  "green",
-  "purple",
-  "orange",
-  "pink,"
-];
 
 const arena = createMatrix(12, 20);
 console.log(arena);
