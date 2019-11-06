@@ -1,2 +1,2 @@
 # Tetris
-a Tetris clone built using JavaScript
+A basic Tetris clone built using JavaScript
