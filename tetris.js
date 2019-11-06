@@ -3,8 +3,6 @@ const context = canvas.getContext("2d");
 
 context.scale(20, 20);
 
-const matrix = [[0, 0, 0], [1, 1, 1], [0, 1, 0]];
-
 function collide(arena, player) {
   const m = player.matrix;
   const o = player.pos;
@@ -35,6 +33,12 @@ function drawMatrix(matrix, offset) {
       }
     });
   });
+}
+
+function createPiece(type) {
+  if (type === "T") {
+    return [[0, 0, 0], [1, 1, 1], [0, 1, 0]];
+  }
 }
 
 function draw() {
@@ -124,7 +128,7 @@ console.table(arena);
 
 const player = {
   pos: { x: 5, y: 5 },
-  matrix: matrix
+  matrix: createPiece("T")
 };
 
 document.addEventListener("keydown", (event) => {
